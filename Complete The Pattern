@@ -1,0 +1,8 @@
+def pattern(n):
+   if n<=0:
+           return None
+   else:
+           res=""
+           x=range(n+1)
+           for i in range(n):
+                   print "".join(map(str,x[i+1:]))
