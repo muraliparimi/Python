@@ -29,6 +29,17 @@ class LinkedList:
                 temp = temp.next
             temp.next = node
 
+    def add_after(self, target_node_data, new_node):
+        if not self.head:
+            raise Exception("List is emppty")
+        pass
+
+    def add_before(self, target_node_data, new_node):
+        if not self.head:
+            raise Exception("List is empty")
+        pass
+
+
     def __iter__(self):
         node = self.head
         while node is not None:
