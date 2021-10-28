@@ -29,16 +29,21 @@ class LinkedList:
                 temp = temp.next
             temp.next = node
 
+    #Implmenation pending
     def add_after(self, target_node_data, new_node):
         if not self.head:
             raise Exception("List is emppty")
         pass
 
+    #Implmenation pending
     def add_before(self, target_node_data, new_node):
         if not self.head:
             raise Exception("List is empty")
         pass
 
+    #Implmenation pending
+    def remove_node(self, target_node_data):
+        pass
 
     def __iter__(self):
         node = self.head
