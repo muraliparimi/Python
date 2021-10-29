@@ -1,3 +1,11 @@
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+    def __repr__(self):
+        return self.data
+
 class CircularLinkedList:
     def __init__(self):
         self.head = None
@@ -21,5 +29,15 @@ class CircularLinkedList:
 
 if __name__ == '__main__':
     cl = CircularLinkedList()
-    cl.print_list()
-    
+    #cl.print_list()
+    a = Node("a")
+    b = Node("b")
+    c = Node("c")
+    d = Node("d")
+    a.next = b
+    b.next = c
+    c.next = d
+    d.next = a
+    #cl.print_list()
+    cl.traverse()
+    cl.print_list(b)
